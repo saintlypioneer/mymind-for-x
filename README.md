@@ -69,7 +69,20 @@ Plain JavaScript, no build step. Edit the files and click the refresh icon on
 | `content.css`   | Styles for the button and status pill                |
 | `popup.html/js` | Toolbar popup with the login state                   |
 
-To produce a release ZIP: run `./build.sh` (creates `mymind-for-x.zip`).
+## Releasing a new version
+
+1. Bump `version` in `manifest.json` (e.g. `1.0.0` → `1.0.1`).
+2. Commit and push the change.
+3. Build the ZIP and cut a GitHub release:
+
+   ```sh
+   ./build.sh
+   gh release create v1.0.1 mymind-for-x.zip \
+     --title "v1.0.1" \
+     --notes "What changed in this release."
+   ```
+
+The attached ZIP is what users download from the [Releases](../../releases) page.
 
 ## License
 
