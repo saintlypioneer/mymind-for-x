@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "mymind-twitter-extension",
+  "name": "mymind for X",
   "version": "1.0.0",
   "description": "Adds a one-click \"Save to my mind\" button to tweets.",
   "permissions": ["cookies"],
@@ -24,7 +24,7 @@
   ],
   "web_accessible_resources": [
     {
-        "resources": ["icons/mymind-icon.png"],
+      "resources": ["icons/mymind-icon.png"],
       "matches": ["https://twitter.com/*", "https://x.com/*"]
     }
   ],
